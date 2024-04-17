@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="burger-menu">
+        <div class="side-menu__list-menu">
+            <ul class="side-menu__list-menu__list">
+                <li class="list-menu__item">Dashboard</li>
+                <li class="list-menu__item">Product</li>
+                <li class="list-menu__item">Customers</li>
+                <li class="list-menu__item">Income</li>
+                <li class="list-menu__item">Promote</li>
+                <li class="list-menu__item">Help</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="list_dash">
+        <div class="list_dash__block">
+            <ul class="list_dash__list">
+
+                <li class="list_dash__item block1">Microsoft</li>
+                <li class="list_dash__item block1">(225) 555-0118</li>
+                <li class="list_dash__item block1">jane@microsoft.com</li>
+                <li class="list_dash__item block1">United States</li>
+
+                <li class="list_dash__item block2">Yahoo</li>
+                <li class="list_dash__item block2">(205) 555-0100</li>
+                <li class="list_dash__item block2">floyd@yahoo.com</li>
+                <li class="list_dash__item block2">Kiribati</li>
+
+                <li class="list_dash__item block3">Adobe</li>
+                <li class="list_dash__item block3">(302) 555-0107</li>
+                <li class="list_dash__item block3">ronald@adobe.com</li>
+                <li class="list_dash__item block3">Israel</li>
+
+                <li class="list_dash__item block4">Tesla</li>
+                <li class="list_dash__item block4">(252) 555-0126</li>
+                <li class="list_dash__item block4">marvin@tesla.com</li>
+                <li class="list_dash__item block4">Iran</li>
+
+                <li class="list_dash__item block5">Google</li>
+                <li class="list_dash__item block5">(629) 555-0129</li>
+                <li class="list_dash__item block5">jerome@google.com</li>
+                <li class="list_dash__item block5">Réunion</li>
+
+                <li class="list_dash__item block6">Microsoft</li>
+                <li class="list_dash__item block6">(406) 555-0120</li>
+                <li class="list_dash__item block6">kathryn@microsoft.com</li>
+                <li class="list_dash__item block6">Curaçao</li>
+
+                <li class="list_dash__item block7">Yahoo</li>
+                <li class="list_dash__item block7">(208) 555-0112</li>
+                <li class="list_dash__item block7">jacob@yahoo.com</li>
+                <li class="list_dash__item block7">Brazil</li>
+
+                <li class="list_dash__item block8">Facebook</li>
+                <li class="list_dash__item block8">(704) 555-0127</li>
+                <li class="list_dash__item block8">kristin@facebook.com</li>
+                <li class="list_dash__item block8">Åland Islands</li>
+
+            </ul>
+        </div>        
+    </div>
+
+    <div class="dashboard">
+
+        <section class="side-menu">
+
+            <div class="side-menu__burger"></div>
+
+            <div class="side-menu__logo">
+                <h1 class="side-menu__logo__text">Dashboard<span class="side-menu__logo__text__span">v.01</span></h1>
+            </div>
+
+            <div class="side-menu__list-menu">
+                <ul class="side-menu__list-menu__list">
+                    <li class="list-menu__item">Dashboard</li>
+                    <li class="list-menu__item">Product</li>
+                    <li class="list-menu__item">Customers</li>
+                    <li class="list-menu__item">Income</li>
+                    <li class="list-menu__item">Promote</li>
+                    <li class="list-menu__item">Help</li>
+                </ul>
+            </div>
+
+            <div class="side-menu__profile">
+                <p class="side-menu__profile__text1">Evano</p>
+                <p class="side-menu__profile__text2">Project Manager</p>
+            </div>
+
+        </section>
+
+        <div class="greetings">Hello Evano 👋🏼,</div>
+
+        <section class="product">
+
+            <h2 class="product__title">All Customers</h2>
+
+            <h4 class="product__status">Active Members</h4>
+
+            <input type="text" class="product__search" placeholder="Search"></input>
+
+            <div class="line"></div>
+
+            <div class="product__mini-table">
+                <div class="product__mini-table__item">Customer Name</div>
+                <div class="product__mini-table__item">Status</div>
+                <div class="product__mini-table__item">Customer Info</div>
+
+                <div class="product__table__line" id="line1"></div>
+                <div class="product__mini-table__item">Jane Cooper</div>
+                <div class="product__mini-table__item" id="active">Active</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(1)">Info</div>
+
+                <div class="product__table__line" id="line2"></div>
+                <div class="product__mini-table__item">Floyd Miles</div>
+                <div class="product__mini-table__item" id="inactive">Inactive</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(2)">Info</div>
+                
+                <div class="product__table__line" id="line3"></div>
+                <div class="product__mini-table__item">Ronald Richards</div>
+                <div class="product__mini-table__item" id="inactive">Inactive</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(3)">Info</div>
+
+                <div class="product__table__line" id="line4"></div>
+                <div class="product__mini-table__item">Marvin McKinney</div>
+                <div class="product__mini-table__item" id="active">Active</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(4)">Info</div>
+
+                <div class="product__table__line" id="line5"></div>
+                <div class="product__mini-table__item">Jerome Bell</div>
+                <div class="product__mini-table__item" id="active">Active</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(5)">Info</div>
+
+                <div class="product__table__line" id="line6"></div>
+                <div class="product__mini-table__item">Kathryn Murphy</div>
+                <div class="product__mini-table__item" id="active">Active</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(6)">Info</div>
+
+                <div class="product__table__line" id="line7"></div>
+                <div class="product__mini-table__item">Jacob Jones</div>
+                <div class="product__mini-table__item" id="active">Active</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(7)">Info</div>
+                
+                <div class="product__table__line" id="line8"></div>
+                <div class="product__mini-table__item">Kristin Watson</div>
+                <div class="product__mini-table__item" id="inactive">Inactive</div>
+                <div class="product__mini-table__item" id="info" onclick="showInfo(8)">Info</div>
+                <div class="product__table__line" id="line9"></div>
+            </div>
+
+            <div class="product__table">
+
+                <div class="product__table__item">Customer Name</div>
+                <div class="product__table__item">Company</div>
+                <div class="product__table__item">Phone Number</div>
+                <div class="product__table__item">Email</div>
+                <div class="product__table__item">Country</div>
+                <div class="product__table__item">Status</div>
+
+                <div class="product__table__line" id="line1"></div>
+                <div class="product__table__item">Jane Cooper</div>
+                <div class="product__table__item">Microsoft</div>
+                <div class="product__table__item">(225) 555-0118</div>
+                <div class="product__table__item">jane@microsoft.com</div>
+                <div class="product__table__item">United States</div>
+                <div class="product__table__item" id="active">Active</div>
+
+                <div class="product__table__line" id="line2"></div>
+                <div class="product__table__item">Floyd Miles</div>
+                <div class="product__table__item">Yahoo</div>
+                <div class="product__table__item">(205) 555-0100</div>
+                <div class="product__table__item">floyd@yahoo.com</div>
+                <div class="product__table__item">Kiribati</div>
+                <div class="product__table__item" id="inactive">Inactive</div>
+
+                <div class="product__table__line" id="line3"></div>
+                <div class="product__table__item">Ronald Richards</div>
+                <div class="product__table__item">Adobe</div>
+                <div class="product__table__item">(302) 555-0107</div>
+                <div class="product__table__item">ronald@adobe.com</div>
+                <div class="product__table__item">Israel</div>
+                <div class="product__table__item" id="inactive">Inactive</div>
+
+                <div class="product__table__line" id="line4"></div>
+                <div class="product__table__item">Marvin McKinney</div>
+                <div class="product__table__item">Tesla</div>
+                <div class="product__table__item">(252) 555-0126</div>
+                <div class="product__table__item">marvin@tesla.com</div>
+                <div class="product__table__item">Iran</div>
+                <div class="product__table__item" id="active">Active</div>
+
+                <div class="product__table__line" id="line5"></div>
+                <div class="product__table__item">Jerome Bell</div>
+                <div class="product__table__item">Google</div>
+                <div class="product__table__item">(629) 555-0129</div>
+                <div class="product__table__item">jerome@google.com</div>
+                <div class="product__table__item">Réunion</div>
+                <div class="product__table__item" id="active">Active</div>
+
+                <div class="product__table__line" id="line6"></div>
+                <div class="product__table__item">Kathryn Murphy</div>
+                <div class="product__table__item">Microsoft</div>
+                <div class="product__table__item">(406) 555-0120</div>
+                <div class="product__table__item">kathryn@microsoft.com</div>
+                <div class="product__table__item">Curaçao</div>
+                <div class="product__table__item" id="active">Active</div>
+                
+                <div class="product__table__line" id="line7"></div>
+                <div class="product__table__item">Jacob Jones</div>
+                <div class="product__table__item">Yahoo</div>
+                <div class="product__table__item">(208) 555-0112</div>
+                <div class="product__table__item">jacob@yahoo.com</div>
+                <div class="product__table__item">Brazil</div>
+                <div class="product__table__item" id="active">Active</div>
+
+                <div class="product__table__line" id="line8"></div>
+                <div class="product__table__item">Kristin Watson</div>
+                <div class="product__table__item">Facebook</div>
+                <div class="product__table__item">(704) 555-0127</div>
+                <div class="product__table__item">kristin@facebook.com</div>
+                <div class="product__table__item">Åland Islands</div>
+                <div class="product__table__item" id="inactive">Inactive</div>
+                <div class="product__table__line" id="line9"></div>
+
+            </div>
+
+            <p class="product__datacount">Showing data 1 to 8 of  256K entries</p>
+
+            <div class="product__pages">
+
+                <div class="product__pages__page"><</div>
+                <div class="product__pages__page">1</div>
+                <div class="product__pages__page">2</div>
+                <div class="product__pages__page">3</div>
+                <div class="product__pages__page">4</div>
+                <div class="product__pages__page">...</div>
+                <div class="product__pages__page">40</div>
+                <div class="product__pages__page">></div>
+
+            </div>
+
+        </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+    integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
