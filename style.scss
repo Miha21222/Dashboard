@@ -35,7 +35,7 @@
                 letter-spacing: -1%;
                 padding-left: 35px;
                 padding-right: 40px;
-                margin: 50px;
+                margin: 35px;
                 text-align: center;
 
                 &:nth-child(1) {
@@ -950,10 +950,10 @@
     .dashboard{
         .product{
             height: 1200px;
+            padding: 25px;
             .product__search{
-                border: 1px solid #000;
                 right: 10px;
-                width: 200px;
+                width: 160px;
             }
 
             .product__pages{
